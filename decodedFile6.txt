@@ -1,0 +1,18 @@
+The high sample rates and high quality of SDRs can be used to
+explore the relatively large range of frequencies of the PJ and RJ in the light
+source of the AMCW ToF cameras by setting a suitable local oscillator frequency
+to get a large intermediate frequency (less than the Nyquist frequency)
+in the dongle. Also, this concept may be used to find the jitter in the light
+source of the aforementioned two modulation types of ToF range imaging cameras
+as well as in any other relevant applications. In addition, it may possible
+to modify the DSP engine in the dongle which is a software based controller in
+order to get maximum benefit but this may not be a straightforward process.
+In Chapter 7, the influence of the periodic jitter on range measurements
+was investigated. Can we compensate the PJ amount in the first phase step
+(by determining and correcting it) before it proceeds to the second phase step
+and so on, in the correlation function within the integration period? With
+the influence of the PJ in each phase step a constant (a fixed amount), then
+it can be further analysed with the crosstalking between phase steps, during
+the integration period. But if it is not a constant (i.e., random behaviour),
+then it will be difficult to compensate for the influence of the PJ on range 
+measurements.
